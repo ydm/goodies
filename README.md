@@ -1,1 +1,3 @@
 # goodies
+
+conda install jupyterlab
