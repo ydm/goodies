@@ -46,4 +46,6 @@ date       asset
 
 [832 rows x 1 columns]
 
+# Winsorize
+xs = xs.clip(lower=xs.quantile(0.01), upper=xs.quantile(0.99))
 ```
