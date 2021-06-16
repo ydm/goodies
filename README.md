@@ -48,4 +48,7 @@ date       asset
 
 # Winsorize
 xs = xs.clip(lower=xs.quantile(0.01), upper=xs.quantile(0.99))
+
+# Enfore types between dataframes.
+b = b.astype(a.dtypes.to_dict())
 ```
