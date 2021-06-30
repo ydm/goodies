@@ -34,6 +34,13 @@ alpha.loc[(slice('2020-01-01', '2020-02-01'), slice(None)),:]
 date       asset          
 2020-01-01 A     -0.713335
            B     -0.458934
+           
+-----------------
+
+same = 'a'
+diff = 'b'
+ys = xs[xs.duplicated(subset=[same], keep=False)]
+ys[~ys.duplicated(subset=[diff], keep=False)]
            C      0.072503
            D      0.230143
            E     -0.354242
