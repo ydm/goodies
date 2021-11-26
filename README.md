@@ -28,6 +28,7 @@ date       asset
 
 [20800 rows x 1 columns]
 
+# use .loc with multi-index
 alpha.loc[(slice('2020-01-01', '2020-02-01'), slice(None)),:]
 
                      alpha
@@ -37,6 +38,7 @@ date       asset
            
 -----------------
 
+# TODO: What the hell this thing does?
 same = 'a'
 diff = 'b'
 ys = xs[xs.duplicated(subset=[same], keep=False)]
